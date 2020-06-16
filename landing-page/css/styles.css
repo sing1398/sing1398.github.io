@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body{
+    background-color: #f7f7ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.section1, .section2{
+    
+    margin: 5px 36px;
+}
+img.logo{
+    max-width: 35vw;
+    height: auto;
+    margin-top: 0.5em;
+}
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+h5{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 29px; 
+}
+.applyform{
+    margin-top: 15px;
+    background-color: #FFFFFF;
+    padding: 1.7em;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #9e9a9a;
+}
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;  
+}
+h6{
+    font-size: 16px;
+    line-height: 19px; 
+    margin-top: 8px;
+    color: #333131;
+}
+input{
+    width: 250px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #F4F4F5;
+    border: 0px;
+    height: 40px;
+    border-radius: 10px;
+    color: #cfcccc;
+    font-size: 16px;
+    padding-left: 9px;
+}
+#agreecheckbox{
+    width: 25px;
+    height: 25px;
+    color: #333131;
+    
+}
+
+#drivewithus {
+    background-color: #57EEAB;
+    width: 250px;
+    height: 55px;
+    color: #333131;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+span.form1, span.form2 {
+    font-size: 14px;
+}
+span.form2{
+    color: #FF8480;
+}
+
+.section3{
+    margin-top: 45px;
+    padding: 10px 0px;
+    background-color: #FFFD8C;
+}
+.footer{
+    margin: 30px 37px;
+}
+
+h3{
+    width: 265px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.formfooter{
+   
+    max-width: 302px;
+}
+.spanfooter {
+    width: 301px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+#hours{
+    width: 60px;
+    height: 40px;
+    margin-right: 13px;
+}
+#city{
+    width: 200px;
+    height: 40px;
+}
+#calculate{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FF8480;
+    color: #F7F7FF;
+    width: 302px;
+    height: 40px;
+}
+.footerright{
+    display: flex;
+    justify-content: center;
+}
+.footerright>img{
+    width: 34px;
+    height: 34px;
+    margin: 20px;
+}
+
