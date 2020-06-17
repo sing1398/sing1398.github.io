@@ -1,60 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+        /* IMPORTING MONSERRAT FONT FAMILY      */
 
 body{
-    background-color: #f7f7ff;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7ff;      /* Changing BG color  */
+    font-family: 'Montserrat', sans-serif;      /* Adding font family & Weight  */
     font-weight: 400;
 }
 
-.section1, .section2{
-    max-width: 90vw;
+.section1, .section2{   /* For Section 1 & 2  */
+    max-width: 90vw;        /*  Max-width for the top content other than footer */
     margin-left: auto;
     margin-right: auto;
 }
-img.logo{
-    width: 114px;
+img.logo{               /*  'D' logo in the header */
+    width: 114px;   /* Width of the logo 'D' for all views  */
     height: auto;
-    margin-top: 0.5em;
+    margin-top: 0.5em;      /*   */
 }
-h1{
-    font-weight: 700;
+h1{                             /*  For Heading 1 for mobile view*/
+    font-weight: 700;           /* Font weight, size, line height  */
     font-size: 60px;
     line-height: 73px;
 }
-h5{
-    margin-top: 15px;
+h5{                             /*  For Heading 5 for mobile view*/
+    margin-top: 15px;       /*  Margin, font-size, line-height  */
     margin-bottom: 5px;
     font-size: 24px;
     line-height: 29px; 
 }
-img.bg-image{
-
-}
-.applyform{
+.applyform{                 /* Apply Now Form  */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;         /*  adding flex to its content*/
+    justify-content: center;        /*  bg color, margin*/
     margin-top: 15px;
     background-color: #FFFFFF;
     padding: 1.7em;
-    border-radius: 25px;
-    box-shadow: 2px 2px 10px #9e9a9a;
+    border-radius: 25px;            /*  curve border*/
+    box-shadow: 2px 2px 10px #9e9a9a;   /* Drop shadow below the form  */
 }
-h2{
+h2{                         /*  For Heading 2 for mobile view*/
     font-weight: 700;
-    font-size: 40px;
+    font-size: 40px;        /*  Font settings */
     line-height: 49px;  
 }
-h6{
+h6{                              /*  For Heading 6 for mobile view*/
     font-size: 16px;
-    line-height: 19px; 
+    line-height: 19px;       /*  font size setting, margin*/
     margin-top: 8px;
-    color: #333131;
+    color: #333131;      /* Color  */
 }
-input{
+input{               /*  For Input Fields for mobile view*/
     width: 100%;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px;         /*  font size setting, margin*/
     background-color: #F4F4F5;
     border: 0px;
     height: 40px;
@@ -63,105 +61,91 @@ input{
     font-size: 16px;
     padding-left: 9px;
 }
-#agreecheckbox{
+#agreecheckbox{         /*  Checkbox in Apply form */
     width: 25px;
     height: 25px;
-    color: #333131;
-    
+    color: #333131;  
 }
-
-#drivewithus {
+#drivewithus {               /*  Drive Twith Us Button */
     background-color: #57EEAB;
     width: 100%;
-    height: 55px;
+    height: 55px;       /*  width & height  */
     color: #333131;
     font-weight: bold;
     font-size: 24px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-span.form1, span.form2 {
+span.form1, span.form2 {             /*  Text in the bottom of apply form  */
     font-size: 14px;
 }
-span.form2{
+span.form2{                          /*  Text in the bottom of apply form  */
     color: #FF8480;
 }
-
-.section3{
+.section3{               /*  Footer setting */
     margin-top: 45px;
     padding: 10px 0px;
     background-color: #FFFD8C;
 }
-.footer{
+.footer{                     /*  Footer setting */  
     margin: 30px 37px;
 }
-
-h3{
+h3{                     /*  For Heading 3 for mobile view*/
     width: 265px;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
-
-.footer-fields{
+.footer-fields{      /*  Input fields in Footer  */
     display: flex;
 }
-.spanfooter {
+.spanfooter {            /*  Text in Footer */
     width: 301px;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
 }
-input#hours{
+input#hours{            /*  For Input Fields for mobile view*/
     width: 25%;
-    height: 40px;
+    height: 40px;       /*  width & height  */
     margin-right: 13px;
 }
-input#city{
-    width: 75%;
+input#city{             /*  For Input Fields for mobile view*/
+    width: 75%;     /*  width & height  */
     height: 40px;
 }
-input#calculate{
+input#calculate{        /*  For Input Fields for mobile view*/
     font-size: 24px;
     font-weight: bold;
     background-color: #FF8480;
     color: #F7F7FF;
-    width: 100%;
+    width: 100%;        /*  width & height  */
     height: 40px;
 }
-.footerright{
+.footerright{            /*  Social Icons in the footer  */ 
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
 }
-.footerright>img{
+.footerright>img{      /*  Social Icons in the footer  */ 
     width: 34px;
     height: 34px;
     margin: 20px;
 }
-
-
-
-
-
-
-
-
+/*  TABLET VIEW     TABLET VIEW     TABLET VIEW     TABLET VIEW     TABLET VIEW     TABLET VIEW     TABLET VIEW     TABLET VIEW  */
 @media only screen and (min-device-width: 768px) {
 
-
-    .section1, .section2{
+    .section1, .section2{       /* For Section 1 & 2  (NO FOOTER) */
         max-width: 80vw;
         margin-left: auto;
         margin-right: auto;
     }
-    h1{
+    h1{                  /*  For Heading 1 for tablet view*/
         font-size: 80px;
         line-height: 97px;
     }
-    .applyform{
+    .applyform{             /* Apply Now Form  */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -171,38 +155,36 @@ input#calculate{
         border-radius: 25px;
         box-shadow: 2px 2px 10px #9e9a9a;
     }
-    h2{
+    h2{                     /*  For Heading 2 for tablet view*/
         font-weight: 700;
         font-size: 40px;
         line-height: 49px;  
     }
-    h6{
+    h6{                 /*  For Heading 6 for tablet view*/
         font-size: 24px;
         line-height: 29px; 
     }
-    input{
+    input{              /*  For Input Fields for tablet view  */
         width: 100%;
+        height: 40px;           /*  width & height  */
         margin-top: 8px;
         margin-bottom: 8px;
         background-color: #F4F4F5;
         border: 0px;
-        height: 40px;
         border-radius: 10px;
         color: #cfcccc;
         font-size: 18px;
         padding-left: 9px;
     }
-    #agreecheckbox{
+    #agreecheckbox{          /*  Checkbox in Apply form */
         font-size: 20px;
         width: 25px;
         height: 25px;
-        color: #333131;
-        
+        color: #333131; 
     }
-    
-    #drivewithus {
+    #drivewithus {                   /*  Drive Twith Us Button */
         background-color: #57EEAB;
-        width: 100%;
+        width: 100%;            /*  width & height  */
         height: 55px;
         color: #333131;
         font-weight: bold;
@@ -210,159 +192,150 @@ input#calculate{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    span.form1, span.form2 {
+    span.form1, span.form2 {        /*  Text in the bottom of apply form  */
         font-size: 17px;
     }
-    span.form2{
+    span.form2{                 /*  Text in the bottom of apply form  */
         color: #FF8480;
-    }
-    
-    .section3{
+    }  
+    .section3{              /*  Footer setting */
         margin-top: 45px;
         padding: 10px 0px 0px;
         background-color: #FFFD8C;
     }
-    .footer{
+    .footer{            /*  Footer setting */
         margin: 30px 37px;
     }
-    
-    h3{
+    h3{                         /*  For Heading 3 for tablet view*/
         width: 265px;
         font-size: 18px;
         line-height: 22px;
         font-weight: bold;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px; 
     }
-    .formfooter{
+    .formfooter{            /*  Form in the footer  */
         margin-top: 15px;
         display: flex;
     }
     
-    .footer-fields{
+    .footer-fields{         /*  Input fields in footer  */
         display: inline-block;
     }
-    .spanfooter {
+    .spanfooter {               /*  Text in footer  */
         width: 301px;
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 10px;
     }
-    input#hours{
-        width: 15%;
+    input#hours{          /*  For Input Fields for tablet view  */
+        width: 15%;     /*  width & height  */
         height: 40px;
         margin-right: 13px;
     }
-    input#city{
+    input#city{           /*  For Input Fields for tablet view  */
         width: 75%;
         height: 40px;
     }
-    input#calculate{
+    input#calculate{      /*  For Input Fields for tablet view  */
         font-size: 24px;
-        font-weight: bold;
-        background-color: #FF8480;
+        font-weight: bold;      /*  Font Setting  */ 
         color: #F7F7FF;
-        width: 30%;
+        background-color: #FF8480;
+        width: 30%;         /*  width & height  */
         height: 40px;
     }
-    .footerright{
+    .footerright{       /*  Social Icons in the footer  */ 
         display: flex;
-        justify-content: center;
+        justify-content: center;        /*  Icons aligned in center  */ 
     }
-    .footerright>img{
+    .footerright>img{        /*  Social Icons in the footer  */ 
         width: 34px;
-        height: 34px;
+        height: 34px;        /*  adjusting size  */
         margin: 20px;
     }
   }
 
+/* DESKTOP VIEW         DESKTOP VIEW            DESKTOP VIEW        DESKTOP VIEW        DESKTOP VIEW        DESKTOP VIEW  */
 
+  @media screen and (min-device-width: 992px)  {
 
+    .section1, .section2{       /* 1st & 2nd Section  ( NO FOOTER)  */
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textblockleft{         /*  Text Block in left  */
+        float: left;
+        max-width: 536px;
+    }
+    img.bg-image{           /*  Scooter Image in BG  */
+        max-width: 797px;
+        height: auto;           /*  width & height  */
+        position: absolute;
+        left: 25vw;
+        z-index: 9;
+        clear: both;            /* clearing floats  */
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+    }
+    h6{                     /*  For Heading 6 for desktop view*/
+        font-size: 24px;
+    }
+    .applyform{              /*  Apply form in the right desktop view*/
+        float: right;        /*  float */
+        max-width: 400px;
+        height: auto;           /*  width & height  */
+        position: relative;
+        z-index: 999;
+    }
+    .section3{              /*  This section contains only footer  */
+        margin-top: 610px;
+        clear: both;
+        padding-bottom: 20px;
+    }
 
-  @media screen 
-  and (min-device-width: 992px)  {
-      
-.section1, .section2{
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-.textblockleft{
-    float: left;
-    max-width: 536px;
-}
-img.bg-image{
-    max-width: 46vw;
-    position: absolute;
-    left: 25vw;
-    height: auto;
-    z-index: 9;
-    clear: both;
-    display: block;
-    text-align: center;
-    margin: 5px auto;
-}
-h6{
-    font-size: 24px;
-}
-.applyform{
-    float: right;
-    max-width: 400px;
-    position: relative;
-    height: auto;
-    z-index: 999;
-}
-.section3{
-    margin-top: 610px;
-    clear: both;
-    padding-bottom: 20px;
-}
-
-.formfooter{
+    .formfooter{        /*  Form in the footer  */
         margin-top: 15px;
-        display: flex;
+        display: flex;      /*  FLEX!  */
     }
     
     .footer-fields{
         display: inline-block;
     }
-    .spanfooter {
-        width: 301px;
-        font-size: 16px;
+    .spanfooter {       /*  Text in footer  */
+        width: 301px;   /*  width  */
+        font-size: 16px;     /*  font size  */
         line-height: 19px;
         margin-bottom: 10px;
     }
     .footerleft{
         max-width: 40vw;
     }
-    input#hours{
-        width: 15%;
+    input#hours{          /*  For Input Fields of footer for desktop view  */
+        width: 15%;     /*  width & height  */
         height: 40px;
         margin-right: 13px;
     }
-    input#city{
+    input#city{         /*  For Input Fields of footer for desktop view  */
         width: 65%;
-        height: 40px;
+        height: 40px;       /*  width & height  */
     }
-    input#calculate{
+    input#calculate{    /*  For Input Fields of footer for desktop view  */
         font-size: 24px;
-        font-weight: bold;
-        background-color: #FF8480;
+        font-weight: bold;       /*  font-settings  */
         color: #F7F7FF;
-        width: 30%;
+        background-color: #FF8480;  /*  bg color  */
+        width: 30%;      /*  width & height  */
         height: 40px;
     }
-    .footerright{
-        float: right;
+    .footerright{       /*  Social Media Icons in Footer*/
+        float: right;       /*  Floating them in right bottom corner  */
         position: relative;
         top: -6em;
     }
-    .footer{
+    .footer{        /*  Whole Footer margin Setting  */
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    
-
-
-
   }
