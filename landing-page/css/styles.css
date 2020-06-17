@@ -7,11 +7,12 @@ body{
 }
 
 .section1, .section2{
-    
-    margin: 5px 36px;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 img.logo{
-    max-width: 35vw;
+    width: 114px;
     height: auto;
     margin-top: 0.5em;
 }
@@ -26,7 +27,13 @@ h5{
     font-size: 24px;
     line-height: 29px; 
 }
+img.bg-image{
+
+}
 .applyform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 15px;
     background-color: #FFFFFF;
     padding: 1.7em;
@@ -45,7 +52,7 @@ h6{
     color: #333131;
 }
 input{
-    width: 250px;
+    width: 100%;
     margin-top: 8px;
     margin-bottom: 8px;
     background-color: #F4F4F5;
@@ -65,7 +72,7 @@ input{
 
 #drivewithus {
     background-color: #57EEAB;
-    width: 250px;
+    width: 100%;
     height: 55px;
     color: #333131;
     font-weight: bold;
@@ -97,9 +104,9 @@ h3{
     margin-bottom: 10px;
     
 }
-.formfooter{
-   
-    max-width: 302px;
+
+.footer-fields{
+    display: flex;
 }
 .spanfooter {
     width: 301px;
@@ -107,26 +114,27 @@ h3{
     line-height: 19px;
     margin-bottom: 10px;
 }
-#hours{
-    width: 60px;
+input#hours{
+    width: 25%;
     height: 40px;
     margin-right: 13px;
 }
-#city{
-    width: 200px;
+input#city{
+    width: 75%;
     height: 40px;
 }
-#calculate{
+input#calculate{
     font-size: 24px;
     font-weight: bold;
     background-color: #FF8480;
     color: #F7F7FF;
-    width: 302px;
+    width: 100%;
     height: 40px;
 }
 .footerright{
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
 }
 .footerright>img{
     width: 34px;
@@ -134,3 +142,227 @@ h3{
     margin: 20px;
 }
 
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 768px) {
+
+
+    .section1, .section2{
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        font-size: 80px;
+        line-height: 97px;
+    }
+    .applyform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        background-color: #FFFFFF;
+        padding: 1.7em;
+        border-radius: 25px;
+        box-shadow: 2px 2px 10px #9e9a9a;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;  
+    }
+    h6{
+        font-size: 24px;
+        line-height: 29px; 
+    }
+    input{
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: #F4F4F5;
+        border: 0px;
+        height: 40px;
+        border-radius: 10px;
+        color: #cfcccc;
+        font-size: 18px;
+        padding-left: 9px;
+    }
+    #agreecheckbox{
+        font-size: 20px;
+        width: 25px;
+        height: 25px;
+        color: #333131;
+        
+    }
+    
+    #drivewithus {
+        background-color: #57EEAB;
+        width: 100%;
+        height: 55px;
+        color: #333131;
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    span.form1, span.form2 {
+        font-size: 17px;
+    }
+    span.form2{
+        color: #FF8480;
+    }
+    
+    .section3{
+        margin-top: 45px;
+        padding: 10px 0px 0px;
+        background-color: #FFFD8C;
+    }
+    .footer{
+        margin: 30px 37px;
+    }
+    
+    h3{
+        width: 265px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        
+    }
+    .formfooter{
+        margin-top: 15px;
+        display: flex;
+    }
+    
+    .footer-fields{
+        display: inline-block;
+    }
+    .spanfooter {
+        width: 301px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    input#hours{
+        width: 15%;
+        height: 40px;
+        margin-right: 13px;
+    }
+    input#city{
+        width: 75%;
+        height: 40px;
+    }
+    input#calculate{
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #FF8480;
+        color: #F7F7FF;
+        width: 30%;
+        height: 40px;
+    }
+    .footerright{
+        display: flex;
+        justify-content: center;
+    }
+    .footerright>img{
+        width: 34px;
+        height: 34px;
+        margin: 20px;
+    }
+  }
+
+
+
+
+  @media screen 
+  and (min-device-width: 992px)  {
+      
+.section1, .section2{
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textblockleft{
+    float: left;
+    max-width: 536px;
+}
+img.bg-image{
+    max-width: 46vw;
+    position: absolute;
+    left: 25vw;
+    height: auto;
+    z-index: 9;
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+h6{
+    font-size: 24px;
+}
+.applyform{
+    float: right;
+    max-width: 400px;
+    position: relative;
+    height: auto;
+    z-index: 999;
+}
+.section3{
+    margin-top: 610px;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.formfooter{
+        margin-top: 15px;
+        display: flex;
+    }
+    
+    .footer-fields{
+        display: inline-block;
+    }
+    .spanfooter {
+        width: 301px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    .footerleft{
+        max-width: 40vw;
+    }
+    input#hours{
+        width: 15%;
+        height: 40px;
+        margin-right: 13px;
+    }
+    input#city{
+        width: 65%;
+        height: 40px;
+    }
+    input#calculate{
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #FF8480;
+        color: #F7F7FF;
+        width: 30%;
+        height: 40px;
+    }
+    .footerright{
+        float: right;
+        position: relative;
+        top: -6em;
+    }
+    .footer{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+
+
+
+  }
