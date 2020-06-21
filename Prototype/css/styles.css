@@ -19,3 +19,19 @@ body{
     position: fixed;
     color: var(--main-text-color);
 }
+.projectlist{
+    display: flex;
+	flex-direction: column;
+	margin-top: 21vh;
+	margin-bottom: 23vh;
+}
+.projectlist>a{
+    font-size: 2.5rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+    position: relative;
+	padding: 2.4px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: font-size 1s;
+}
