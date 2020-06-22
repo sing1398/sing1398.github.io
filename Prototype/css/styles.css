@@ -15,9 +15,21 @@ body{
     display: block;
     margin: 0.5em auto;
 }
+/*                 NAVIGATION           */
 .nav{
     position: fixed;
     color: var(--main-text-color);
+}
+.menu>a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 27px;
+}
+span.nav-link-photo{
+    position: absolute;
+    transform-origin: left top;
+    transform: rotate(90deg);
+    left: 15em;
 }
 .projectlist{
     display: flex;
