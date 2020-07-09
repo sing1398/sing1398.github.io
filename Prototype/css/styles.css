@@ -95,6 +95,7 @@ body{
 	flex-direction: column;
 	margin-top: 21vh;
 	margin-bottom: 23vh;
+	z-index: 999994;
 }
 .projectlist>a{
     font-size: 2.5rem;
