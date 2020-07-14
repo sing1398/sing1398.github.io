@@ -106,7 +106,7 @@ body{				/*	FOR ENTIRE BODY */
 /*             NAVIGATION ENDS             */
 
 
-.photography-content{		/*	MAIN CONTAINER FOR CONTENT ON PHOTOGRAPHY PAGE */
+.photography-content, .design-content{		/*	MAIN CONTAINER FOR CONTENT  */
 	display: grid;
 	place-items: center;
 	max-width: 80vw;
@@ -120,6 +120,11 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 	height: auto;
 	animation: rotate 10s infinite;
 }
+img.statueimage{			/*	Image of Statue */
+	margin-top: 10vh;
+	max-width: 70vw;
+	height: auto;
+}
 @keyframes rotate{		/*	ANIMATING THE ROTATESTAMP */
 	from{
 		transform: rotate(0deg);
@@ -128,7 +133,7 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 		transform: rotate(360deg);
 	}
 }
-.projectlist{				/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
+.projectlist, .designlist{				/*	LIST OF PROJECTS    	*/
 	position: relative;
 	display: grid;
 	place-items: center;
@@ -136,7 +141,7 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 	margin-bottom: 6rem;
 	z-index: 999994;
 }
-.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
+.projectlist>a, .designlist>a{			/*	EACH PROJECT ITEM   NORMAL STATE	*/
 	padding: 5px;
 	position: relative;
     font-size: 2.2rem;
@@ -144,7 +149,7 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
     text-decoration: none;
 	transition: var(--transition-font-size);
 }
-.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
 	padding: 5px;
 	font-size: 3.5rem;
 	padding: 10px;
@@ -180,10 +185,10 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 576px) { 		/*	1st break point	*/	
-	.projectlist>a{
-		font-size: 2.5rem;			/*	Photography Each project item	*/
+	.projectlist>a, .designlist>a{
+		font-size: 2.5rem;			/*	Each project item	*/
 	}
-	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	DESIGN PAGE	*/
 		font-size: 3.7rem;
 		padding: 12px;
 	}
@@ -194,6 +199,11 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 	.social-icons:hover{				/*	Social Icons on hover state	*/
 		height: 40px;
 		width: auto;
+	}
+	img.statueimage{			/*	Image of Statue */
+		margin-top: 10vh;
+		max-width: 300px;
+		height: auto;
 	}
 	
  }
@@ -213,18 +223,22 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 		max-width: 350px;		/*	Rotating Stamp	*/
 		height: auto;
 	}
-	.projectlist{			/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
+	.projectlist, .designlist{			/*	LIST OF PROJECTS   	*/
 		margin-top: 10rem;
 	}
-	.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
+	.projectlist>a, .designlist>a{			/*	EACH PROJECT ITEM   	NORMAL STATE		*/
 		font-size: 3.3rem;
 	}
-	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
 		font-size: 4.5rem;
 		padding: 15px;
 	}
 	.social-icons{				/*	Social icons normal state	*/
 		padding: 12px;
+	}
+	img.statueimage{			/*	Image of Statue */
+		max-width: 330px;
+		height: auto;
 	}
  }
 /* ///////////////////
@@ -234,13 +248,13 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 992px) { 			/*	3rd break point	*/
-	.projectlist{			/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
+	.projectlist, .designlist{			/*	LIST OF PROJECTS    	*/
 		margin-top: 10rem;
 	}
-	.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
+	.projectlist>a, .designlist>a{			/*	EACH PROJECT ITEM   	NORMAL STATE	*/
 		font-size: 6rem;
 	}
-	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
 		font-size: 7.2rem;
 		padding: 15px;
 	}
