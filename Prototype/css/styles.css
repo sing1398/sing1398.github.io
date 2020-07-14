@@ -178,6 +178,17 @@ img.statueimage{			/*	Image of Statue */
 	font-size: 1.2rem;
 	margin-top: 1rem;
 }
+/* //////////////     ABOUT    PAGE        ////////////////// */
+.about-content{
+	display: grid;
+	place-items: center;
+	max-width: 80vw;
+	height: auto;
+	margin: 1em auto;
+	transition: var(--transition-max-width);
+}
+
+
 /* ///////////////////
 /////////////////////////////////////
 //////////////////////////////////////////////////////
