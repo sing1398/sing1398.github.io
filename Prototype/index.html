@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">        <!--    CSS RESET    -->
     <link rel="stylesheet" href="fonts/fonts.css">      <!--    FONTS    -->
     <link rel="stylesheet" href="css/styles.css">       <!--    My Own Styles    -->
-    <script src="js/vue.js"></script>
-
+    <link rel="stylesheet" href="css/cursor.css">
     <title>Singh Visuals</title>
 </head>
 <body>
@@ -36,6 +35,7 @@
     </nav>           <!--       Navigation  ENDS      -->
 
     <section class="photography-content">            <!--       Content of Photography Page         -->
+        <img src="images/Asset 1.png" alt="rotatestamp" class="rotatestamp">
         <div class="projectlist">
             <a href="www.singhvisuals.com" class="projectlist-link">The Tea Story</a>
             <a href="#" class="projectlist-link">Eagle's Trails</a>
@@ -47,14 +47,21 @@
         </div>
 
         <div class="social-list">                <!--      Social Media Links        -->
-            <a href="https://www.instagram.com/" class="social-items"><img src="images/icons/instagram.png" alt="Instagram"></a>
-            <a href="https://www.behance.net/" class="social-items"><img src="images/icons/behance.png" alt="Behance"></a>
-            <a href="https://www.facebook.com/" class="social-items"><img src="images/icons/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" class="social-items"><img src="images/icons/instagram.png" alt="Instagram" class="social-icons"></a>
+            <a href="https://www.behance.net/" class="social-items"><img src="images/icons/behance.png" alt="Behance" class="social-icons"></a>
+            <a href="https://www.facebook.com/" class="social-items"><img src="images/icons/facebook.png" alt="Facebook" class="social-icons"></a>
         </div>
     </section>
 
     <footer class="footer">          <!--       Footer        -->
         <span>Singh Visuals, 2020</span>
     </footer>
+    <script src="js/cursor.js"></script>
+    <script>
+        var kursorx = new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+        })
+    </script>
 </body>
 </html>
