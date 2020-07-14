@@ -142,7 +142,7 @@ img.statueimage{			/*	Image of Statue */
 	z-index: 999994;
 }
 .projectlist>a, .designlist>a{			/*	EACH PROJECT ITEM   NORMAL STATE	*/
-	padding: 5px;
+	padding: 8px;
 	position: relative;
     font-size: 2.2rem;
     color: var(--main-text-color);
@@ -150,9 +150,7 @@ img.statueimage{			/*	Image of Statue */
 	transition: var(--transition-font-size);
 }
 .projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
-	padding: 5px;
 	font-size: 3.5rem;
-	padding: 10px;
 	transition: var(--transition-font-size);
 }
 .social-list>a{		/*	SOCIAL ICONS	*/
@@ -168,7 +166,6 @@ img.statueimage{			/*	Image of Statue */
 }
 .social-icons:hover{		/*	SOCIAL ICONS ON HOVER	*/
 	height: 35px;
-	padding: 8px;
 	width: auto;
 	/* transition: height 1s; */
 }
@@ -179,7 +176,8 @@ img.statueimage{			/*	Image of Statue */
 	margin-top: 1rem;
 }
 /* //////////////     ABOUT    PAGE        ////////////////// */
-.about-content{
+
+.about-content{				/*	Content of About Page 	*/
 	display: grid;
 	place-items: center;
 	max-width: 80vw;
@@ -188,43 +186,43 @@ img.statueimage{			/*	Image of Statue */
 	transition: var(--transition-max-width);
 	font-weight: bold;
 }
-.greetings{
+.greetings{			/*	Enclosing Greet1 & Greet2	*/
 	text-align: center;
 	margin-top: 15vh;
 }
-.greet1{
-	font-size: 2rem;
+.greet1{		/*	Greet1	*/
+	font-size: 2.4rem;
 }
-.greet2{
+.greet2{		/*	Greet2	*/
 	font-size: 1rem;
 	font-weight: bold;
 }
-.myphoto{
+.myphoto{	/*	My Photo	*/
 	display: block;
 	text-align: center;
 	margin: 1.5em auto;
 	max-width: 70vw;
 	height: auto;
 }
-.name{
+.name{		/*	Enclosing my name & tagline	*/
 	text-align: center;
 	font-size: 2rem;
 	margin-bottom: 1em;
 }
-.tagline{
+.tagline{		/*	tagine	*/
 	font-size: 1rem;
 }
-.myintro{
+.myintro{		/*	inrto paragraph	*/
 	text-align: center;
 	font-size: 1.3rem;
 	font-weight: bold;
 }
-.contact{
+.contact{		/*	Enclosing Contact Details	*/
 	text-align: center;
 	font-size: 1.7rem;
 	margin: 1.5em auto 2em;
 }
-.contactdetails{
+.contactdetails{		/*	Contact Details	*/
 	font-size: 1.2rem;
 }
 
@@ -241,7 +239,6 @@ img.statueimage{			/*	Image of Statue */
 	}
 	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	DESIGN PAGE	*/
 		font-size: 3.7rem;
-		padding: 12px;
 	}
 	.social-icons{				/*	Social icons normal state	*/
 		height: 25px;
@@ -256,7 +253,42 @@ img.statueimage{			/*	Image of Statue */
 		max-width: 300px;
 		height: auto;
 	}
-	
+
+	.greet1{		/*	Greet1	*/
+		font-size: 3rem;
+	}
+	.greet2{		/*	Greet2	*/
+		font-size: 1.5rem;
+	}
+	.myphoto{	/*	My Photo	*/
+		margin: 1.5em auto;
+		max-width: 370px;
+		height: auto;
+	}
+	.name{		/*	Enclosing my name & tagline	*/
+		font-size: 3rem;
+		margin-bottom: 1em;
+	}
+	.tagline{		/*	tagine	*/
+		font-size: 1.5rem;
+	}
+	.myintro{		/*	inrto paragraph	*/
+		font-size: 2.5rem;
+		line-height: 1.2;
+		margin-top: 2.5em;
+	}
+	.contact{		/*	Enclosing Contact Details	*/
+		font-size: 3rem;
+		margin: 1.5em auto 2em;
+	}
+	.contactdetails{		/*	Contact Details	*/
+		font-size: 1.7rem;
+		transition: var(--transition-font-size);
+	}
+	.contactdetails:hover{		/*	Contact Details	*/
+		font-size: 2rem;
+		transition: var(--transition-font-size);
+	}
  }
 
  /* ///////////////////
@@ -282,7 +314,6 @@ img.statueimage{			/*	Image of Statue */
 	}
 	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
 		font-size: 4.5rem;
-		padding: 15px;
 	}
 	.social-icons{				/*	Social icons normal state	*/
 		padding: 12px;
@@ -307,7 +338,41 @@ img.statueimage{			/*	Image of Statue */
 	}
 	.projectlist>a:hover, .designlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  		*/
 		font-size: 7.2rem;
-		padding: 15px;
+	}
+
+	.greet1{		/*	Greet1	*/
+		font-size: 3rem;
+	}
+	.greet2{		/*	Greet2	*/
+		font-size: 1.7rem;
+	}
+	.myphoto{	/*	My Photo	*/
+		margin: 2.5em auto;
+		max-width: 370px;
+		height: auto;
+	}
+	.name{		/*	Enclosing my name & tagline	*/
+		font-size: 3.4rem;
+		margin-bottom: 1em;
+	}
+	.tagline{		/*	tagine	*/
+		font-size: 1.8rem;
+	}
+	.myintro{		/*	inrto paragraph	*/
+		font-size: 4rem;
+		line-height: 1.2;
+		margin-top: 2.5em;
+	}
+	.contact{		/*	Enclosing Contact Details	*/
+		font-size: 3rem;
+		margin: 1.5em auto 2em;
+	}
+	.contactdetails{		/*	Contact Details	*/
+		font-size: 1.8rem;
+	}
+	.contactdetails:hover{		/*	Contact Details	*/
+		font-size: 2.4rem;
+		
 	}
  }
 
