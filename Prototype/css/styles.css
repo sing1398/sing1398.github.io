@@ -1,11 +1,11 @@
-:root{
-    --main-bg-color: #fff;
-	--main-text-color: #000;
-	--main-hover-link: #000;
-	--transition-font-size: font-size 1s;
-	--transition-max-width: max-width ease-in-out 1s;
+:root{					/*	MAKE CHANGES HERE! */
+    --main-bg-color: #fff;					/*	BODY BACKGROUND COLOR */
+	--main-text-color: #000;				/*	NORMAL TEXT COLOR */
+	--main-hover-link: #000;				/*	TEXT COLOR ON HOVER */
+	--transition-font-size: font-size 1s;	  /*	TRANSITION FOR FONT SIZE */
+	--transition-max-width: max-width ease-in-out 1s;		/*	TRANSITION FOR WIDTH */
 }
-body{
+body{				/*	FOR ENTIRE BODY */
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: 'Big';
@@ -13,7 +13,7 @@ body{
 	text-decoration: none;
 	cursor: none;
 }
-.mainlogo {
+.mainlogo {			/*	LOGO IN THE HEADER */
     max-width: 70vw;
     height: auto;
     display: block;
@@ -40,7 +40,7 @@ body{
 	margin: 4.5vw; 
 }
 .nav .menu__item span {
-	opacity: .64; 
+	opacity: .64; 			/*	NORMAL STATE HERE! */
 }
 .nav .menu__item:hover span {
 	opacity: 1; 
@@ -51,7 +51,7 @@ body{
 .nav .menu__item.active span {
 	opacity: 1; 
 }
-.nav .menu__item.active:hover span {
+.nav .menu__item.active:hover span {			/*	ON HOVER STATE! */
 	color: var(--main-hover-link);
 	opacity: 1; 
 }
@@ -70,7 +70,7 @@ body{
 	top: 0;
 	right: -.4em ;
 }
-.nav .menu__item--photos>span {
+.nav .menu__item--photos>span { 		/*	PHOTOGRAPHY LINK */
 	position: absolute;
 	z-index: 999991;
 	top: 4em;
@@ -80,7 +80,7 @@ body{
 	font-size: 22px ;
 	color: var(--main-text-color);
 }
-.nav .menu__item--designs {
+.nav .menu__item--designs {				/*	DESIGNS LINK */
 	bottom: -.3em;
 	right: -.2em;
 	z-index: 999996;
@@ -91,7 +91,7 @@ body{
 	bottom: 0;
 	left: -.4em;
 }
-.nav .menu__item--about>span {
+.nav .menu__item--about>span {			/*	ABOUT LINK */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -106,7 +106,7 @@ body{
 /*             NAVIGATION ENDS             */
 
 
-.photography-content{
+.photography-content{		/*	MAIN CONTAINER FOR CONTENT ON PHOTOGRAPHY PAGE */
 	display: grid;
 	place-items: center;
 	max-width: 80vw;
@@ -114,13 +114,13 @@ body{
 	margin: 1em auto;
 	transition: var(--transition-max-width);
 }
-img.rotatestamp{
+img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 	margin-top: 18vh;
 	max-width: 40vw;
 	height: auto;
 	animation: rotate 10s infinite;
 }
-@keyframes rotate{
+@keyframes rotate{		/*	ANIMATING THE ROTATESTAMP */
 	from{
 		transform: rotate(0deg);
 	}
@@ -128,7 +128,7 @@ img.rotatestamp{
 		transform: rotate(360deg);
 	}
 }
-.projectlist{
+.projectlist{				/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
 	position: relative;
 	display: grid;
 	place-items: center;
@@ -136,35 +136,37 @@ img.rotatestamp{
 	margin-bottom: 6rem;
 	z-index: 999994;
 }
-.projectlist>a{
+.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
 	padding: 5px;
     font-size: 2.2rem;
     color: var(--main-text-color);
     text-decoration: none;
 	transition: var(--transition-font-size);
 }
-.projectlist>a:hover{
+.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+	padding: 5px;
 	font-size: 3.5rem;
 	padding: 10px;
 	transition: var(--transition-font-size);
 }
-.social-list>a{
+.social-list>a{		/*	SOCIAL ICONS	*/
+	padding: 5px;
 	position: relative;
 }
-.social-icons{
+.social-icons{			/*	SOCIAL ICONS	*/
 	padding: 5px;
 	width: auto;
 	height: 20px;
 	margin-bottom: 5rem;
 	transition: height 1s;
 }
-.social-icons:hover{
+.social-icons:hover{		/*	SOCIAL ICONS ON HOVER	*/
 	height: 35px;
 	padding: 8px;
 	width: auto;
 	transition: height 1s;
 }
-.footer{
+.footer{			/*	FOOTER	*/
 	position: relative;
 	text-align: center;
 	margin-top: 1rem;
