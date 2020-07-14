@@ -186,6 +186,46 @@ img.statueimage{			/*	Image of Statue */
 	height: auto;
 	margin: 1em auto;
 	transition: var(--transition-max-width);
+	font-weight: bold;
+}
+.greetings{
+	text-align: center;
+	margin-top: 15vh;
+}
+.greet1{
+	font-size: 2rem;
+}
+.greet2{
+	font-size: 1rem;
+	font-weight: bold;
+}
+.myphoto{
+	display: block;
+	text-align: center;
+	margin: 1.5em auto;
+	max-width: 70vw;
+	height: auto;
+}
+.name{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1em;
+}
+.tagline{
+	font-size: 1rem;
+}
+.myintro{
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.contact{
+	text-align: center;
+	font-size: 1.7rem;
+	margin: 1.5em auto 2em;
+}
+.contactdetails{
+	font-size: 1.2rem;
 }
 
 
