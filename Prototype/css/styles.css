@@ -138,6 +138,7 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 }
 .projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
 	padding: 5px;
+	position: relative;
     font-size: 2.2rem;
     color: var(--main-text-color);
     text-decoration: none;
@@ -164,16 +165,86 @@ img.rotatestamp{			/*	ROTATING STAMP ON TOP */
 	height: 35px;
 	padding: 8px;
 	width: auto;
-	transition: height 1s;
+	/* transition: height 1s; */
 }
 .footer{			/*	FOOTER	*/
 	position: relative;
 	text-align: center;
+	font-size: 1.2rem;
 	margin-top: 1rem;
 }
+/* ///////////////////
+/////////////////////////////////////
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media (min-width: 576px) { 		/*	1st break point	*/	
+	.projectlist>a{
+		font-size: 2.5rem;			/*	Photography Each project item	*/
+	}
+	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+		font-size: 3.7rem;
+		padding: 12px;
+	}
+	.social-icons{				/*	Social icons normal state	*/
+		height: 25px;
+		width: auto;
+	}
+	.social-icons:hover{				/*	Social Icons on hover state	*/
+		height: 40px;
+		width: auto;
+	}
+	
+ }
 
+ /* ///////////////////
+/////////////////////////////////////
+//////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media (min-width: 768px) { 		/*	2nd break point	*/
+	.mainlogo{
+		max-width: 550px;		/*	Main Logo	*/
+		height: auto;
+	}
+	img.rotatestamp{
+		max-width: 350px;		/*	Rotating Stamp	*/
+		height: auto;
+	}
+	.projectlist{			/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
+		margin-top: 10rem;
+	}
+	.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
+		font-size: 3.3rem;
+	}
+	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+		font-size: 4.5rem;
+		padding: 15px;
+	}
+	.social-icons{				/*	Social icons normal state	*/
+		padding: 12px;
+	}
+ }
+/* ///////////////////
+/////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 992px) { 			/*	3rd break point	*/
+	.projectlist{			/*	LIST OF PROJECTS    PHOTOGRAPHY PAGE	*/
+		margin-top: 10rem;
+	}
+	.projectlist>a{			/*	EACH PROJECT ITEM   	PHOTOGRAPHY PAGE	*/
+		font-size: 6rem;
+	}
+	.projectlist>a:hover{		/*	EACH PROJECT ITEM ON HOVER  	PHOTOGRAPHY PAGE	*/
+		font-size: 7.2rem;
+		padding: 15px;
+	}
+ }
 
 
 
