@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh Visuals</title>
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="kursor/kursor.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="locomotivescroll/locomotive-scroll.min.css">
+</head>
+<body>
+
+    <div class="container" data-scroll-container>
+        <div class="canvas">
+            <nav class="nav">               <!--       Navigation        -->
+                <div class="menu">
+                    <a href="index.html">
+                        <div class="menu__item menu__item--photos">
+                            <span class="menu__item--title">Photography</span>
+                        </div>
+                    </a>
+                    <a href="designs.html">
+                        <div class="menu__item menu__item--designs">
+                            <span class="menu__item--title">Designs</span>
+                        </div>
+                    </a>
+                    <a href="about.html">
+                        <div class="menu__item menu__item--about">
+                            <span class="menu__item--title">About</span>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div class="headerlogo">
+                <a href="/" class="headerlogo">SINGH VISUALS</a>
+            </div>
+            <div class="photographycontent" data-scroll-section>
+                <div class="photography-project">
+                    <div class="photography-project-title">Tour of EStudio</div>
+                </div>
+                <p class="photography-project-paragraph">
+                    This is the tour of EStudio. Enjoy the shots!         
+                </p>
+            </div>
+                <div class="photography-project-images" data-scroll-section>
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0034.jpg" alt="Singh Visuals - Tour of EStudio"/>
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0001.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0041-2.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0006.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    
+                    
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0003.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0007.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0010-2.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0018.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0044.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0014-2.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0021.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0101.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0033.jpg" alt="Singh Visuals - Tour of EStudio" />
+                
+                
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0099.jpg" alt="Singh Visuals - Tour of EStudio" />
+                    <img class="p-p-image" src="https://singhvisuals.com/img/tourofestudio/singhvisuals-0129.jpg" alt="Singh Visuals - Tour of EStudio" />
+
+                </div>
+
+
+
+
+            
+        </div>
+    </div>
+
+
+    <script src="locomotivescroll/locomotive-scroll.min.js"></script>
+	<script>
+			const scroll = new LocomotiveScroll({
+				el: document.querySelector('[data-scroll-container]'),
+				smooth: true,
+				smoothMobile: true
+		});
+	</script>
+	<script src="kursor/kursor.js"></script>
+	<script>
+        var kursorx = new kursor({
+            type: 1,        
+            removeDefaultCursor: true,
+        })
+    </script>
+</body>
+</html>
