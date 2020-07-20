@@ -370,7 +370,7 @@ a.project_list_item{
 	width: 65px;
 	height: auto;
 }
-.btn-2-right{
+.btns .btn-2-right{
 	transform: rotate(180deg);
 }
 
@@ -379,7 +379,7 @@ a.project_list_item{
 
 /* 		SOCIAL	 */
 .social{
-	margin: 6em 0;
+	margin: 10em 0;
 }
 .social-p{
 	font-size: 11px;
