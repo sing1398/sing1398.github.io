@@ -193,7 +193,9 @@ a.headerlogo{
 .projects_title_h2{
 	width: 135px;
 }
-.project_list{}
+.project_list{
+	margin-bottom: -450px;
+}
 .project_list_item{
 	font-size: 44px;
 	text-transform: uppercase;
@@ -370,7 +372,7 @@ a.project_list_item{
 	height: auto;
 }
 .btns .btn-2-right{
-	transform: rotate(180deg);
+	transform: rotate(90deg);
 }
 
 
