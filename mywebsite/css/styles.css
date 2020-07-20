@@ -129,7 +129,6 @@ a.headerlogo{
 }
 .float, .section_1, .section_2, .section_5, .pw_title, .btns{
 	width: 85vw;
-	height: auto;
     margin: var(--margin-lr-auto);
 }
 
