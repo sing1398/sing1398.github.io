@@ -196,7 +196,7 @@ a.headerlogo{
 }
 .project_list{}
 .project_list_item{
-	font-size: 40px;
+	font-size: 44px;
 	text-transform: uppercase;
 	border-top: 1px solid rgba(0,0,0,0.3);
 	border-bottom: 1px solid rgba(0,0,0,0);
@@ -206,7 +206,7 @@ a.headerlogo{
 	position: relative;
 	overflow: hidden;
 	padding: 0.6em 0 0.6em;
-	flex-basis: 90%;
+	flex-basis: 70%;
 	letter-spacing: normal;
 	word-spacing: normal;
 	transition: all 1s ;
@@ -221,13 +221,15 @@ a.project_list_item{
 	font-size: 14px;
 }
 .project_list_item-title{
-	opacity: .4;
-	padding: 40px 0 40px;
+	opacity: .6;
+	padding: 20px 0 20px;
 	margin: 0;
+	width: 265px;  	/*		Elements decreased on hover and comes in same line				  */
 	letter-spacing: normal;
 	word-spacing: normal;
 	transition: all 1s ;
 }
+
 .project_list_item-title:hover{
 	opacity: 1;
 	letter-spacing: -3.6px;
