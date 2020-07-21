@@ -166,12 +166,13 @@ a.headerlogo{
 /* ///////////// */
 
 .float{
-	padding: 0 0 4em 0;
+	padding: 4em 0 4em 0;
 }
 .float_p{
-	position: absolute;
+	position: relative;
 	left: 20%;
 	font-size: 11px;
+	top: 30vh;
 	width: 140px;
 	z-index: 3;
 }
@@ -184,7 +185,7 @@ a.headerlogo{
 }
 
 .section_1{
-	margin-top: -200px;
+	margin-top: 200px;
 }
 .projects{}
 .projects_title{
@@ -401,30 +402,6 @@ a.project_list_item{
 	height: auto;
 	margin: 20vh 0;
 	position: relative;
-}
-.p-p-image:nth-of-type(odd){
-	left: 20%;
-	animation: p-p-image-odd  3s alternate-reverse infinite;
-}
-@keyframes p-p-image-odd{
-	from{
-		transform: rotateX(5deg) rotateY(5deg);
-	}
-	to{
-		transform: rotateX(20deg) rotateY(20deg);
-	}
-}
-.p-p-image:nth-of-type(even){
-	left: 4%;
-	animation: p-p-image-even  3s alternate-reverse infinite;
-}
-@keyframes p-p-image-even{
-	from{
-		transform: rotateX(-5deg) rotateY(5deg);
-	}
-	to{
-		transform: rotateX(-20deg) rotateY(20deg);
-	}
 }
 
 
