@@ -1,5 +1,4 @@
-@import url("https://use.typekit.net/xsd2vhp.css");
-/*  Font from Adobe Fonts */
+
 :root{
     --main-bg-color: ##EEEEEE;					/*	BODY BACKGROUND COLOR */
 	--main-text-color: #000;				/*	NORMAL TEXT COLOR */
@@ -8,10 +7,24 @@
 	--h1-font-size-mob: 1.3rem;
 	--transition-all: all 1s;
 }
-body{
-    font-family: aw-conqueror-didot, serif;
-    font-weight: 400;
+@font-face {						/* FONT UNDER FREE FOR PERSONAL USE LICENCE */
+    font-family: 'Bigilla';
+    src: url('BigillaBold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bigilla';
+    src: url('BigillaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+	font-family: 'Bigilla';
+	font-weight: bold;
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
     cursor: none;
@@ -21,7 +34,7 @@ a{
     color: var(--main-text-color);
 }
 h1,h2,h3,h4,h5,h6{
-	font-weight: normal;
+	font-weight: bold;
 }
 .headerlogo{
 	display: flex;
@@ -30,6 +43,9 @@ h1,h2,h3,h4,h5,h6{
 }
 a.headerlogo{
 	font-size: 55px;
+	position: fixed;
+	left: 50%;
+    transform: translate(-50%, 0);
 }
 
 /*                 NAVIGATION           */
@@ -152,15 +168,235 @@ a.headerlogo{
 	word-spacing: 4.5px;
 }
 
+.float{
+	padding: 4em 0 4em 0;
+}
+.float_p{
+	position: relative;
+	left: 20%;
+	font-size: 11px;
+	top: 40vh;
+	width: 140px;
+	z-index: 6;
+	mix-blend-mode: difference;
+}
+.float_stamp{
+	width: 150px;
+	height: auto;
+	animation:rotate 6s infinite linear;
+	
+}
+
+
+/* ANIMATIONS */
+.icon-star svg{animation:rotate 6s infinite linear}
+@keyframes rotate{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+
+/*  */
+
+.projects{}
+.projects_title{
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	margin-bottom: 3em;
+}
+.projects_title_h2{		/* 		COMMERCIAL PROJECTS		*/
+	width: 135px;
+	font-size: 25px;
+}
+.projects_title_h3{			/* 		10 PROJECTS	*/
+	font-size: 18px;
+}
+.project_list{
+	margin-bottom: 5vh;
+}
+.project_list-photo{
+	margin-bottom: 100px;
+}
+.project_list-photos{
+	margin-bottom: 20vh;
+}
+.project_list_item{				/*  PROJECT ITEM  */
+	font-size: 44px;
+	text-transform: uppercase;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0);
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+	padding: 0.6em 0 0.6em;
+	flex-basis: 70%;
+	letter-spacing: normal;
+	word-spacing: normal;
+	transition: all 1s ;
+}
+a.project_list_item{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.project-no{
+	padding: 40px 0 40px;
+	font-size: 14px;
+}
+.project_list_item-title{
+	opacity: .6;
+	padding: 20px 0 20px;
+	margin: 0;
+	width: 70vw;  	/*		Elements decreased on hover and comes in same line				  */
+	letter-spacing: normal;
+	word-spacing: normal;
+	transition: all 1s ;
+}
+
+.project_list_item-title:hover{
+	opacity: 1;
+	letter-spacing: -3.6px;
+	word-spacing: 4.5px;
+}
+a.projects-h4{
+	font-size: 16px;
+}
+.section_2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20vh;
+}
+.btn-1-left{
+	width: 65px;
+	height: auto;
+}
+
+
+/* ///////////////////// */
+.pw{
+	margin: 6em 0;
+}
+.pw_title{
+	position: relative;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+}
+.pw_title_h2{
+	font-size: 25px;
+}
+.pw_title_h3{
+	font-size: 18px;
+}
+.pw_wrapper{
+	width: 100%;
+}
+.pw_list{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.pw_list::-webkit-scrollbar {
+	display: none;
+  }
+.pw_image{
+	flex: 0 0 auto;
+	padding: 0 3em 0 0;
+	position: relative;
+	left: 25vw;	
+}
+.pw_image>img{
+	width: 50vw;
+	height: auto;
+}
+.pw_image:nth-last-child(1){
+	margin-right: 40vw;
+}
+.btns{
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+.btn-2-left, .btn-2-right{
+	width: 65px;
+	height: auto;
+}
+.btns>.btn-2-right>svg{
+	transform: rotate(180deg);
+}
+
+/* 		SOCIAL	 */
+
+.social{
+	padding: 10vh 0 30vh 0;
+}
+.social-p{
+	font-size: 4vw;
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	text-align: center;
+	margin: var(--margin-lr-auto);
+	margin-bottom: 2em;
+	position: relative;
+	top: -3em;
+	z-index: 40;
+}
+.social-list, .social-list-project{
+	display: flex;
+	justify-content: center;
+	z-index: 50;
+}
+.social-list-project{
+	margin: 3em auto;
+}
+.social-list>a{
+	opacity: 0.4;
+}
+.social-icon{
+	width: 21px;
+	height: auto;
+	margin: 0 4px;
+	padding: 0 2px;
+}
+.social-list>a:hover{
+	opacity: 0.85;
+}
+
+/* FOOTER */
+
+.f-items{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.f-items>span{
+	font-size: 12px;
+}
+.f-items>span:nth-child(3), .f-items>span:nth-child(4){
+	display: none;
+}
+
+
+/* ///////////////////////////////////////////		DESIGNS PAGE
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.design_section{
+	width: 85vw;
+	margin: var(--margin-lr-auto);
+}
+.design_intro{
+	margin: 40vh auto 10vh;
+	font-size: 5vw;
+}
 
 
 
 
 
 
-
-
-
+/* ////////							ABOUT PAGE						 ////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 
@@ -185,8 +421,8 @@ a.headerlogo{
 
 
 @media (min-width:992px) {
+	
 	.icon-hide{
-		display: block;
 		position: absolute;
 		left: 50%;
 		margin-right: -50%;
