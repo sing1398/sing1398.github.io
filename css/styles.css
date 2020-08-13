@@ -38,11 +38,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .headerlogo{
 	display: flex;
+	justify-content: center;
 	margin: var(--margin-lr-auto);
 	z-index: 999;
 }
 a.headerlogo{
-	font-size: 55px;
+	font-size: 40px;
+	width: 100%;
 	position: fixed;
 	left: 50%;
     transform: translate(-50%, 0);
@@ -131,16 +133,18 @@ a.headerlogo{
 }
 
 /*             NAVIGATION ENDS             */
-
+.note{
+	height: 80vh;
+}
 .mynote{
-	max-width: 500px;
+	max-width: 70vw;
 	position: relative;
 	z-index: 5;
-	top: 4em;
+	padding-top: 20vh;
 	height: auto;
 	display: flex;
 	justify-content: center;
-	margin: 20vh auto 30vh;
+	margin: 20vh auto 20vh;
 }
 .icon-hide{
     display: none;
@@ -149,7 +153,7 @@ a.headerlogo{
 	display: grid;
 	place-items: center;
     padding: 3em 0;
-    margin: 25vh auto;
+    margin: 0vh auto 20vh;
 }
 .header_links{
 	position: relative;
@@ -167,20 +171,27 @@ a.headerlogo{
 	letter-spacing: -3.6px;
 	word-spacing: 4.5px;
 }
-
+.section_1{
+	max-width: 85vw;
+	height: auto;
+	margin: var(--margin-lr-auto);
+}
 .float{
-	padding: 4em 0 4em 0;
+	margin: 8vh 0 15vh 0;
+	position: relative;
+	height: 50vh;
 }
 .float_p{
 	position: relative;
 	left: 20%;
-	font-size: 11px;
-	top: 40vh;
+	font-size: 13px;
 	width: 140px;
 	z-index: 6;
 	mix-blend-mode: difference;
 }
 .float_stamp{
+	position: absolute;
+	right: 20%;
 	width: 150px;
 	height: auto;
 	animation:rotate 6s infinite linear;
@@ -194,7 +205,9 @@ a.headerlogo{
 
 /*  */
 
-.projects{}
+.projects{
+	margin-top: 3vh;
+}
 .projects_title{
 	display: flex;
 	justify-content: space-between;	
@@ -274,7 +287,7 @@ a.projects-h4{
 
 /* ///////////////////// */
 .pw{
-	margin: 6em 0;
+	margin: 6em 0 2em;
 }
 .pw_title{
 	position: relative;
@@ -283,7 +296,7 @@ a.projects-h4{
 	align-items: center;
 }
 .pw_title_h2{
-	font-size: 25px;
+	font-size: 22px;
 }
 .pw_title_h3{
 	font-size: 18px;
@@ -314,7 +327,7 @@ a.projects-h4{
 	margin-right: 40vw;
 }
 .btns{
-	margin-top: 1em;
+	margin-top: 2em;
 	display: flex;
 	justify-content: space-between;
 }
@@ -329,7 +342,7 @@ a.projects-h4{
 /* 		SOCIAL	 */
 
 .social{
-	padding: 10vh 0 30vh 0;
+	padding: 10vh 0 18vh 0;
 }
 .social-p{
 	font-size: 4vw;
@@ -379,17 +392,28 @@ a.projects-h4{
 }
 
 
-/* ///////////////////////////////////////////		DESIGNS PAGE
+/* ///////////////////////////////////////////		PHOTOS PAGE
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.design_section{
+.photos_section{
 	width: 85vw;
 	margin: var(--margin-lr-auto);
 }
-.design_intro{
-	margin: 40vh auto 10vh;
-	font-size: 5vw;
+.photos_intro{
+	max-width: 80vw;
+	margin: 30vh auto 10vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
-
+.photos_intro>p{
+	font-size: 27px;
+	max-width: 80vw;
+	margin-bottom: 6vh;
+}
+.intro_photo{
+	max-width: 80vw;
+	margin: var(--margin-lr-auto);
+}
 
 
 
@@ -411,6 +435,161 @@ a.projects-h4{
 
 
 
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+@media (min-width:576px){
+	span.texthide{			 /*     Hides Drag Suggestion              */
+		display: none;
+		opacity: 0;
+	}
+	.header_title{
+		font-size: 6vw
+	}
+	
+	/* .projects_title_h2, .pw_title_h2{					COMMERCIAL PROJECTS		
+
+	}
+	.projects_title_h3, .pw_title_h3{					10 PROJECTS	
+
+	}
+	.project_list_item{
+	
+	} */
+	.project_list_item-title:hover{
+		opacity: 1;
+		letter-spacing: -3.6px;
+		word-spacing: 4.5px;
+	}
+	a.projects-h4{
+		font-size: 18px;
+	}
+	.social-p{
+		font-size: 16px;
+		width: 150px;
+	}
+
+	/* ABOUT */
+	.mybio-grid>span{
+		font-size: 100px;
+	}
+	.contact>a{
+		font-size: 3vw;
+		opacity: 1;
+		transition: var(--transition-all);
+	}
+	.contact>a:hover{
+		opacity: 0.5;
+	}
+	.name-logo{
+		max-width: 300px;
+		height: auto;
+	}
+
+}
+
+/* ///////////		TABLET	///////////////// */
+
+
+
+
+@media (min-width:768px){	/* 		Main headings in beginning		*/
+	a.headerlogo{
+		font-size: 58px;
+	}
+	.header_title{
+		font-size: 5.8vw;
+	}
+	.projects_title_h2, .pw_title_h2{			/* 		COMMERCIAL PROJECTS		*/
+
+	}
+	.projects_title_h3, .pw_title_h3{			/* 		10 PROJECTS	*/
+
+	}
+	/* Personal Projects Images */
+	.pw_wrapper{
+		width: 90%;
+		margin: var(--margin-lr-auto);
+	}
+	.pw_list {
+		display: flex;
+		justify-content: center;
+		margin: var(--margin-lr-auto);
+		overflow: none;
+	}
+	.pw_image{
+		padding: 0 2vw;
+		position: static;
+	}
+	.pw_image>img{
+		width: 15vw;
+		height: auto;
+	}
+	.pw_image:nth-last-child(1){
+		margin-right: 0;
+	}
+
+	.project_list_item{
+		font-size: 8vw;
+	}
+	.project_list_item-title:hover{
+		opacity: 1;
+		letter-spacing: -3.6px;
+		word-spacing: 4.5px;
+	}
+	a.projects-h4{
+		font-size: 18px;
+	}
+
+	.f-items>span:nth-child(3), .f-items>span:nth-child(4){
+		display: block;
+	}
+
+	/* ////////////		ABOUT PAGE		//////////// */
+	.mybio-grid>span{
+		font-size: 150px;
+	}
+	.typing-demo{
+		font-size: 4.5vw;
+	}
+	.mynote{
+		max-width: 470px;
+		height: auto;
+	}
+	.photography__gallery--portrait-double>img {
+		max-width: 25vw;
+		height: auto;
+	}
+	.photography__gallery--landscape>img {
+		max-width: 50vw;
+		height: auto;
+	}
+	/* Photos Page */
+	.photos_intro{
+		max-width: 80vw;
+		margin: 30vh auto 10vh;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.photos_intro>p{
+		font-size: 4vw;
+		max-width: 45%;
+	}
+	.intro_photo{
+		max-width: 45%;
+		margin: 0;
+		
+	}
+	
+
+
+}
+
+
+/* ///////////		DESKTOP		///////////////// */
 
 
 
