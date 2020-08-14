@@ -174,7 +174,7 @@ a.headerlogo {
 .note {
 	height: 80vh;
 }
-
+/* My Dollar Note */
 .mynote {
 	max-width: 70vw;
 	position: relative;
@@ -185,11 +185,11 @@ a.headerlogo {
 	justify-content: center;
 	margin: 20vh auto 20vh;
 }
-
+/* Scroll Icon */
 .icon-hide {
 	display: none;
 }
-
+/* My Professions */
 .header_sub {
 	display: grid;
 	place-items: center;
@@ -210,12 +210,16 @@ a.headerlogo {
 	z-index: 10;
 	transition: all 1s;
 }
+.header_title>a{
+	transition: all 1s;
+}
 
 .header_title:hover {
 	letter-spacing: -3.6px;
 	word-spacing: 4.5px;
+	transition: all 1s;
 }
-
+/* My Professions Ends */
 .section_1 {
 	max-width: 85vw;
 	height: auto;
@@ -236,7 +240,7 @@ a.headerlogo {
 	z-index: 6;
 	mix-blend-mode: difference;
 }
-
+/* ROtating Stamp */
 .float_stamp {
 	position: absolute;
 	right: 20%;
@@ -262,7 +266,7 @@ a.headerlogo {
 }
 
 
-/*  */
+/* 	Project Section Starts here */
 
 .projects {
 	margin-top: 3vh;
@@ -349,6 +353,7 @@ img.project_img {
 a.projects-h4 {
 	font-size: 16px;
 }
+/* Project Section Ends here */
 
 .section_2 {
 	display: flex;
@@ -362,9 +367,7 @@ a.projects-h4 {
 	height: auto;
 }
 
-
-/* ///////////////////// */
-
+/* My Personal Projects Section */
 .pw {
 	margin: 6em 0 2em;
 }
@@ -387,7 +390,7 @@ a.projects-h4 {
 .pw_wrapper {
 	width: 100%;
 }
-
+/* List */
 .pw_list {
 	display: flex;
 	flex-wrap: nowrap;
@@ -398,7 +401,7 @@ a.projects-h4 {
 .pw_list::-webkit-scrollbar {
 	display: none;
 }
-
+/* Images */
 .pw_image {
 	flex: 0 0 auto;
 	padding: 0 3em 0 0;
@@ -414,7 +417,7 @@ a.projects-h4 {
 .pw_image:nth-last-child(1) {
 	margin-right: 40vw;
 }
-
+/* Buttons */
 .btns {
 	margin-top: 2em;
 	display: flex;
@@ -430,7 +433,7 @@ a.projects-h4 {
 .btns>.btn-2-right>svg {
 	transform: rotate(180deg);
 }
-
+/* My Personal Projects Section ENDS */
 
 /* 		SOCIAL	 */
 
@@ -461,7 +464,7 @@ a.projects-h4 {
 .social-list-project {
 	margin: 3em auto;
 }
-
+/* Each Icon */
 .social-list>a {
 	opacity: 0.4;
 }
@@ -476,7 +479,6 @@ a.projects-h4 {
 .social-list>a:hover {
 	opacity: 0.85;
 }
-
 
 /* FOOTER */
 
@@ -495,7 +497,6 @@ a.projects-h4 {
 	display: none;
 }
 
-
 /* ///////////////////////////////////////////		PHOTOS PAGE
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -511,13 +512,13 @@ a.projects-h4 {
 	justify-content: center;
 	flex-direction: column;
 }
-
+/* Photos Paragraph */
 .photos_intro>p {
 	font-size: 27px;
 	max-width: 80vw;
 	margin-bottom: 6vh;
 }
-
+/* Photo */
 .intro_photo {
 	max-width: 80vw;
 	margin: var(--margin-lr-auto);
@@ -563,7 +564,6 @@ span.myname {
 	text-transform: uppercase;
 }
 
-
 /* https://grid.layoutit.com/?id=2a6A0vH        BIO section       */
 
 .bio-section {
@@ -602,27 +602,23 @@ span.myname {
 	padding-top: 0.2em;
 }
 
-
 /* ////////////////////////////////////////////////////////////////////// */
 
 @media (min-width:576px) {
-	span.texthide {
-		/*     Hides Drag Suggestion              */
-		display: none;
-		opacity: 0;
-	}
 	.header_title {
 		font-size: 6vw
 	}
+	/* Project list */
 	.project_list_item-title:hover {
 		opacity: 1;
-		letter-spacing: -3.6px;
+		letter-spacing: -7.6px;
 		word-spacing: 4.5px;
 	}
 	a.projects-h4 {
 		font-size: 18px;
 	}
-	.social-p {
+	.social-p {	
+		/* Social Paragraph */
 		font-size: 16px;
 		width: 150px;
 	}
@@ -635,7 +631,6 @@ span.myname {
 		height: auto;
 	}
 }
-
 
 /* ///////////		TABLET	///////////////// */
 
@@ -680,7 +675,7 @@ span.myname {
 	}
 	.project_list_item-title:hover {
 		opacity: 1;
-		letter-spacing: -3.6px;
+		letter-spacing: -7.6px;
 		word-spacing: 4.5px;
 	}
 	a.projects-h4 {

@@ -33,7 +33,6 @@ I have used many resouces, Under MIT Licence and Free For Personal Use.
 | CSS Reset | https://meyerweb.com/eric/tools/css/reset/ |
 | Bigilla Font | https://www.behance.net/search?search=bigilla |
 
-<br>
-<br>
+
 ### Thank you
 
